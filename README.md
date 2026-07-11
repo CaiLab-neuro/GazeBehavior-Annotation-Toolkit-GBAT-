@@ -13,7 +13,7 @@ Children actively explore the world to learn its underlying causal structure. Th
 This top-level repository groups the three component tools in one workspace:
 
 - `Video_Synchronizer` for aligning recordings with audio-based synchronization
-- `Sam2UI` for object segmentation and gaze-target annotation
+- `SegmentVideo4Gaze` for object segmentation and gaze-target annotation
 - `Video-Annotator` for automated behavioral video annotation
 
 ## Repository Structure
@@ -29,7 +29,7 @@ Top-level files:
 
 See [Video_Synchronizer/README.md](https://github.com/CaiLab-neuro/Video_Synchronizer.git).
 
-### `Sam2UI` (Gaze_Target_Annotator)
+### `SegmentVideo4Gaze` (Gaze Target Annotator)
 Tools and UI for video object segmentation with semantic labels using SAM2/3 models. For egocentric videos, we also provide code to align eye-gaze data with segmented object masks to identify the semantic object category of each fixation (what object the person is looking at ?).
 
 Top-level files:
@@ -40,7 +40,7 @@ Top-level files:
 - `process_gaze_mask_alignment.py`
 - `segment.py`
 
-See [Sam2UI/README.md](https://github.com/CaiLab-neuro/Sam2UI.git).
+See [SegmentVideo4Gaze/README.md](https://github.com/CaiLab-neuro/SegmentVideo4Gaze).
 
 ### `video_annotator`
 Tools for video content annotation using a Vision-Language Model (VLM) in a question-answering framework. In human studies, this tool can be used to label human poses, behaviors, and environmental changes, such as whether a toy remains in the room.
@@ -66,7 +66,7 @@ See [video-annotator/README.md](https://github.com/CaiLab-neuro/Video-Annotator)
 ## Suggested Workflow
 
 1. Use `Video_Synchronizer` to align recordings.
-2. Use `Sam2UI` to segment objects and support gaze-target annotation.
+2. Use `SegmentVideo4Gaze` to segment objects and support gaze-target annotation.
 3. Use `Video-Annotator` to generate behavioral annotations from video segments.
 
 ## Installation
